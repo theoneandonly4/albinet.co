@@ -7,7 +7,7 @@ The Albinet.co Company  (from here on 'the Company') has been created on 2020-04
 
 The Company has 2 puposes:
 - 1. Create Tools to Model & Administrate any type of organization
-- 2. Advise Company on how to implement & manage Tools and Processes
+- 2. Advise Companies on how to implement & manage Tools and Processes
 
 # Website Details
 
@@ -26,4 +26,12 @@ The Website will serve the following purposes:
 Dynamic Master Data Translated in Several language
 Data to be saved in the main website resource Database
 
-#
+# Z-Notes
+Turn on Development Server on MacOS: sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+Apache setup done with Catalina specific guide https://discussions.apple.com/docs/DOC-250001766
+Sites folders uses link to other places such as Onedrive, the folder needs to be chmod a+x to work with Apache.
+
+# ZZ-Next Steps
+Create DB with Texts in different languages
+Create API for Texts
+Create 
