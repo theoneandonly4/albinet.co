@@ -34,4 +34,5 @@ Sites folders uses link to other places such as Onedrive, the folder needs to be
 # ZZ-Next Steps
 Create DB with Texts in different languages
 Create API for Texts
-Create 
+Create DB for blog posts & comments
+Create API for blog posts & comments

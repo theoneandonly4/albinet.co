@@ -1,3 +1,10 @@
 {
-    "type": "module"
+    "name": "albinet.co",
+    "version": "0.0.1",
+    "Description": "Websites management for albinet.co",
+    "private": true,
+    "dependancies": {},
+    "dependencies": {
+        "express": "^4.17.1"
+    }
 }
