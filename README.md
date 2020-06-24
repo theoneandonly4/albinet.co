@@ -27,9 +27,14 @@ Dynamic Master Data Translated in Several language
 Data to be saved in the main website resource Database
 
 # Z-Notes
-Turn on Development Server on MacOS: sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
-Apache setup done with Catalina specific guide https://discussions.apple.com/docs/DOC-250001766
-Sites folders uses link to other places such as Onedrive, the folder needs to be chmod a+x to work with Apache.
+(N/A since NodeJS move) Turn on Development Server on MacOS: sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+(N/A since NodeJS move) Apache setup done with Catalina specific guide https://discussions.apple.com/docs/DOC-250001766
+(N/A since NodeJS move) Sites folders uses link to other places such as Onedrive, the folder needs to be chmod a+x to work with Apache.
+
+Added the following .htaccess file content in the /www folder in Production server to force HTTPS:
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Port} 80
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 # ZZ-Next Steps
 Create DB with Texts in different languages

@@ -1,9 +1,10 @@
-/* main home page content for Albinet.co
+/* text content in all supported languages for Albinet.co
 * By Pierre-Etienne ALBINET
 * Started 20200527
 * Changed 20200527
 * Not made to be reused
 */
+'use strict';
 const texts = {
     langList: [
         { code: 'en', desc: 'English' },

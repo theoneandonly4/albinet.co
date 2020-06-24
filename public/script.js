@@ -24,12 +24,9 @@ for (var el of texts.langList) {
     op = undefined;
 };
 lang.id = 'lng';
+lang.value = language;
 lang.addEventListener('change', translate);
 lng.parentNode.replaceChild(lang, lng);
-//Set default language
-//lng.value = language;
-
-
 
 //B.Home Content
 const main = document.getElementById('main');
