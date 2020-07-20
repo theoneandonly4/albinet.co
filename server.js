@@ -9,10 +9,9 @@ const express = require('express');
 const vhost = require('vhost');
 const app = express();
 const env = process.env.NODE_ENV || 'development';
-const path = require('path');
 
 var hostname;
-const port = process.env.server__port || 3000;
+const port = 3000;
 
 // O - Logging
 const { createLogger, format, transports } = require('winston');
@@ -30,8 +29,8 @@ const logger = createLogger({
   defaultMeta: { service: 'Albinet.co' },
   transports: [
     //
-    // - Write to all logs with level `info` and below to `quick-start-combined.log`.
-    // - Write all logs error (and below) to `quick-start-error.log`.
+    // - Write to all logs with level `info` and below to `combined.log`.
+    // - Write all logs error (and below) to `error.log`.
     //
     new transports.File({ filename: 'logs/error.log', level: 'error' }),
     new transports.File({ filename: 'logs/combined.log' })
