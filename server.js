@@ -11,7 +11,7 @@ const app = express();
 const env = process.env.NODE_ENV || 'development';
 
 var hostname;
-const port = process.env.server__   port || 3000;
+const port = process.env.server__port || 3000;
 
 // O - Logging
 const { createLogger, format, transports } = require('winston');
