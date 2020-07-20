@@ -22,9 +22,18 @@ The Website will serve the following purposes:
 - 2. Gather news about the Company and the Tools development in a Blog section
 - 3. Showcase Projects and Advisory experience
 
-# 1- Tools Presentation
+# 1-Blog
+Pull articles from Aco Procmin Database
+
+# 2-Tools Presentation
 Dynamic Master Data Translated in Several language
 Data to be saved in the main website resource Database
+
+# 3-Advisory
+Pull Projects from Procmin Database
+
+# 4-Contact
+Pull Contact Address from Procmin Database
 
 # Z-Notes
 (N/A since NodeJS move) Turn on Development Server on MacOS: sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist

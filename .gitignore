@@ -24,5 +24,11 @@ jspm_packages/
 tmp/
 temp/
 
+# Local Dev Certificate
+certs/
+
+# Local Dev Tests
+procmin/tests/
+
 .DS_Store
 /public/.DS_Store

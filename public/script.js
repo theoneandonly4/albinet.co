@@ -1,7 +1,7 @@
 /* Albinet.co main script
 * By Pierre-Etienne ALBINET
 * Started 20200507
-* Changed 20200527
+* Changed 20200701 - Copyright Year Update
 * The Website is a Single Page App this main script will handle the changes incurred by User Navigation
 */
 'use strict';
@@ -9,6 +9,7 @@
 import {home} from './cnt/home.js';
 import {texts} from './cnt/texts.js';
 
+//II.Main Logic
 //A.Fetch Language
 //TODO - add - fetch Language from Cookies
 var language = 'en' // || Cookies.language
@@ -31,6 +32,16 @@ lng.parentNode.replaceChild(lang, lng);
 //B.Home Content
 const main = document.getElementById('main');
 main.parentNode.replaceChild(home, main);
+
+//C. Copyright Year Update
+const foot = document.getElementById('foot');
+var currYear = new Date().getFullYear();
+if (currYear == '2020') {
+    currYear = '';
+} else {
+    currYear = '-' + currYear;
+};
+foot.textContent = '©Copyright 2020' + currYear + ' Albinet.co SAS'
 
 //III. Functions
 function translate() {
