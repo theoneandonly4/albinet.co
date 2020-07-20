@@ -4,11 +4,12 @@
 * Changed 20200624 - Vhost added to manage Procmin
 * Could be reused partially
 */
-
+const version = '0.1.0';
 const express = require('express');
 const vhost = require('vhost');
 const app = express();
 const env = process.env.NODE_ENV || 'development';
+const path = require('path');
 
 var hostname;
 const port = process.env.server__port || 3000;
@@ -86,16 +87,16 @@ app.use(vhost(domPrm, prm));
 app.use(vhost(wwwPrm, prm));
 
 // V - Albinet.co App
-aco.use(express.static('public'));
+aco.use(express.static('public/albinetco'));
 aco.get('/', (req,res) => res.sendFile(__dirname + 'index.html'));
 
 // V - procmin.net App
-prm.use(express.static('procmin'));
+prm.use(express.static('public/procmin'));
 prm.get('/', (req,res) => res.sendFile(__dirname + 'index.html'));
 
 // V - Listen
 if (env == 'production') {
-    app.listen(port, () => logger.info(`Server running in ${env} mode at http://${domAco}:${port} and http://${domPrm}:${port}`));
+    app.listen(port, () => logger.info(`Server version ${version} is running in ${env} mode at http://${domAco}:${port} and http://${domPrm}:${port}`));
 };
 if (env == 'development') {
     const https = require('https');

@@ -1,0 +1,46 @@
+//Testing Text Encryption
+//console.log(crypt.hash('coucou'));
+//const key = crypt.newKey();
+//console.log(key);
+//const text = 'coucou';
+//const crypted = crypt.encrypt(text, key);
+//console.log(crypted);
+//const decrypted = crypt.decrypt(crypted, key);
+//console.log(decrypted);
+
+//Testing Message Encryption
+//const keyPairA = crypt.newKeyPair();
+//console.log(keyPairA);
+//const keyPairB = crypt.newKeyPair();
+//console.log(keyPairB);
+//const derivedKeyPair = crypt.keyPairFromPrivateKey(keyPairA.secretKey);
+//console.log(derivedKeyPair);
+//const crypted = crypt.messageEncrypt('coucou', keyPairB.publicKey, keyPairA.secretKey);
+//console.log(crypted);
+//const decrypted = crypt.messageDecrypt(crypted, keyPairA.publicKey, keyPairB.secretKey);
+//console.log(decrypted);
+
+//Testing Message Signature
+//const keyPair = crypt.newSignKeyPair();
+//console.log(keyPair);
+//const derivedKeyPair = crypt.signKeyPairFromPrivateKey(keyPair.secretKey);
+//console.log(derivedKeyPair);
+//
+//const signMess = crypt.signMessage('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie, diam eu interdum varius, metus eros venenatis justo, sed sollicitudin dolor leo sed dolor. Nulla facilisi. Nunc viverra, nulla nec.', keyPair.secretKey);
+//console.log(signMess);
+//const mess = crypt.unsignMessage(signMess, keyPair.publicKey);
+//console.log(mess);
+//
+//const signature = crypt.sign('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie, diam eu interdum varius, metus eros venenatis justo, sed sollicitudin dolor leo sed dolor. Nulla facilisi. Nunc viverra, nulla nec.', keyPair.secretKey);
+//console.log(signature);
+//const check = crypt.verify('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie, diam eu interdum varius, metus eros venenatis justo, sed sollicitudin dolor leo sed dolor. Nulla facilisi. Nunc viverra, nulla nec.', signature, keyPair.publicKey);
+//console.log(check);
+
+//Testing Key derivation from Password
+//(async () => {
+//    var result = await crypt.newDerivedKey('password1234', 32);
+//    console.log(result);
+//    var key = await crypt.deriveKey('password1234', result.salt, 32);
+//    console.log(key);
+//})();
+

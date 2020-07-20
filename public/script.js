@@ -1,37 +1,20 @@
-/* Albinet.co main script
+/* Procmin.net main script
 * By Pierre-Etienne ALBINET
-* Started 20200507
-* Changed 20200701 - Copyright Year Update
+* Started 20200701
+* Changed 20200701 - Initiation
 * The Website is a Single Page App this main script will handle the changes incurred by User Navigation
 */
 'use strict';
 //I.Imports
-import {home} from './cnt/home.js';
-import {texts} from './cnt/texts.js';
+import crypt from './src/scripts/crypt.js';
 
 //II.Main Logic
 //A.Fetch Language
-//TODO - add - fetch Language from Cookies
-var language = 'en' // || Cookies.language
-const lng = document.getElementById('lng');
+//TODO - add - fetch Language from DB
 
-const lang = document.createElement('select');
-var op;
-for (var el of texts.langList) {
-    op = document.createElement('option');
-    op.setAttribute('value', el.code);
-    op.innerHTML = el.desc;
-    lang.appendChild(op);
-    op = undefined;
-};
-lang.id = 'lng';
-lang.value = language;
-lang.addEventListener('change', translate);
-lng.parentNode.replaceChild(lang, lng);
 
-//B.Home Content
-const main = document.getElementById('main');
-main.parentNode.replaceChild(home, main);
+//B.Main Content
+
 
 //C. Copyright Year Update
 const foot = document.getElementById('foot');
@@ -44,11 +27,4 @@ if (currYear == '2020') {
 foot.textContent = '©Copyright 2020' + currYear + ' Albinet.co SAS'
 
 //III. Functions
-function translate() {
-    var lg = document.getElementById('lng').value;
-    const els = document.getElementsByClassName('txt');
-    for (var el of els) {
-        el.textContent = texts.texts[el.id][lg];
-    };
-};
 
