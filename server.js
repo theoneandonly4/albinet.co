@@ -11,7 +11,7 @@ const app = express();
 const env = process.env.NODE_ENV || 'development';
 
 var hostname;
-const port = 3000;
+const port = process.env.server__   port || 3000;
 
 // O - Logging
 const { createLogger, format, transports } = require('winston');
@@ -105,4 +105,3 @@ if (env == 'development') {
         cert: fs.readFileSync('./certs/procmin.local.crt')
     }, app).listen(port, () => logger.info(`Server running in ${env} mode at http://${domAco}:${port} and http://${domPrm}:${port}`))
 };
-
