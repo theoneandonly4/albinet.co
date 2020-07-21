@@ -53,10 +53,10 @@ if (process.env.NODE_ENV !== 'production') {
 
 const aco = express();
 var domAco;
-var wwwAco
+var wwwAco;
 const prm = express();
 var domPrm;
-var wwwPrm
+var wwwPrm;
 
 // I - Maintenance Mode
 if (env == 'maintenance') {
