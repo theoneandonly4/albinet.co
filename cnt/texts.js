@@ -70,7 +70,52 @@ const texts = {
         15:{
             en:'Language',
             fr:'Langage'
+        },
+        16:{
+            en:'Albinet.co Latest News',
+            fr:"Dernières nouvelles d'Albinet.co"
+        },
+        17:{
+            en:'The Blog functionality powered by the Albinet.co in-house tool Procmin will soon be available',
+            fr:'La fonctionalité de blog sera bientôt disponible, assurée par notre outil maison Albinet.co : Procmin'
+        },
+        18:{
+            en:'Albinet.co In-House built Tools',
+            fr:"Outils faits Maison chez Albinet.co"
+        },
+        19:{
+            en:'The Tools display functionality powered by the Albinet.co in-house tool Procmin will soon be available',
+            fr:"La fonctionalité d'affichage des outils sera bientôt disponible, assurée par notre outil maison Albinet.co : Procmin"
+        },
+        20:{
+            en:'Albinet.co Advisory Experience',
+            fr:"Expérence d'accompagnement chez Albinet.co"
+        },
+        21:{
+            en:'The Advisory listing powered by the Albinet.co in-house tool Procmin will soon be available',
+            fr:"La fonctionalité d'affichage de l'expérience d'accompagnement  sera bientôt disponible, assurée par notre outil maison Albinet.co : Procmin"
+        },
+        22:{
+            en:'Albinet.co Contact Details',
+            fr:'Contacter Albinet.co'
+        },
+        23:{
+            en:'To contact us via email, please use the following link: ',
+            fr:'Pour nous contacter par email, utiliser le lien suivant: '
+        },
+        24:{
+            en:'.',
+            fr:'.'
+        },
+        25:{
+            en:'You can also follow us on ',
+            fr:'Vous pouvez aussi nous suivre sur '
+        },
+        26:{
+            en:'.',
+            fr:'.'
         }
+        
     }
 };
 
