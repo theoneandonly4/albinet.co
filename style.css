@@ -2,56 +2,114 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #009999;
+  background-image: url(./src/img/aco-gb2light-david-yu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 115px;
+  background-attachment: fixed;
   font-family:Verdana;
-  color:#003366;
+  color:#FFFFFF;
+  margin: 0px;
+  padding-top: 165px;
+  padding-bottom:50px;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-decoration: underline;
+}
+p {
+  text-align: justify;
+}
+a {
+  color: lightblue;
 }
 #head {
-  background-color: #009999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color:#1c1c1c;
   padding:15px;
   text-align:center;
+  overflow: auto;
+}
+#void {
+  float:left;
+  width:10%;
+}
+#logo {
+  background-color:#1c1c1c;
+  float:left;
+  width:80%;
+  text-align:center;
+}
+#lng {
+  float:left;
+  width:10%;
+  text-align:right;
 }
 #menu {
-  float:left;
-  width:20%;
+  position: fixed;
+  top: 115px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width:100%;
   text-align:center;
+  background: inherit;
+  overflow: auto;
 }
 #menu a {
-  background-color:#e5e5e5;
+  float:left;
+  background-color:#1c1c1c;
   padding:8px;
-  margin-top:7px;
-  display:block;
-  width:100%;
-  color:black;
+  margin-right:0.5vw;
+  margin-left:0.5vw;
+  width:19vw;
+  color:#FFFFFF;
 }
 #main {
-  background-color:#e5e5e5;
-  float:left;
-  width:60%;
-  padding:0 20px;
-  border:7px solid #009999;
-
-}
-#right {
-  background-color:#e5e5e5;
-  float:left;
-  width:20%;
-  padding:15px;
-  margin-top:7px;
-  text-align:center;
+  display: block;
+  width:80vw;
+  margin:0 10vw;
+  padding:7px 1vw;
+  background-color: #222;
 }
 #foot {
-  background-color:#009999;
+  background-color:#1c1c1c;
   text-align:center;
   padding:10px;
   margin-top:7px;
+  font-style: italic;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  #menu, #main, #right {
+  body {
+    background-position: 0px 0px;
+    padding: 0px;
+    margin: 7px;
+  }
+  #head, #menu, #foot {
+    position: relative;
+  }
+  #menu {
+  top:auto;
+  }
+  #menu a, #main, #logo, #lng {
     width:100%;
     margin-top:7px;
+    margin-left: 0px;
+    margin-right: 0px;
     border: 0px;
+  }
+  #lng {
+    text-align: center;
+  }
+  #void {
+    width:0%;
   }
 }
